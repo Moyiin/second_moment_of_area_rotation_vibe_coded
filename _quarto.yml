@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Engineering Mechanics II"
+  subtitle: "Axial Members, Torsion, Beam Bending, and Buckling"
+  author: "Your Name"
+  chapters:
+    - index.qmd
+    - syllabus.qmd
+    - notation.qmd
+    - topics/axial-members/01-normal-stress-strain.qmd
+    - topics/axial-members/02-axial-deformation.qmd
+    - topics/axial-members/interactive-axial-deformation.qmd
+    - topics/beam-bending/05-deflection.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true

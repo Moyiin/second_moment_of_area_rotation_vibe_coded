@@ -1,0 +1,133 @@
+---
+title: "Normal Stress and Strain"
+---
+
+# Normal Stress and Strain
+
+## Learning Goals
+
+After this section you should be able to:
+
+- define normal stress and normal strain
+- compute stress in an axially loaded member
+- understand the relationship between stress and strain
+- apply Hooke's law
+
+## Axially Loaded Member
+
+An axially loaded member is a structural element subjected to forces acting along its longitudinal axis.
+
+Examples include:
+
+- tie rods
+- columns
+- truss members
+- bolts
+
+The internal force in such a member is the axial force \(N\).
+
+## Definition: Normal Stress
+
+The normal stress in a member is defined as the axial force divided by the cross-sectional area.
+
+$$
+\sigma = \frac{N}{A}
+$$
+
+where
+
+- \(N\) is the axial force
+- \(A\) is the cross-sectional area
+
+A positive value corresponds to **tension**, while a negative value corresponds to **compression**.
+
+## Normal Strain
+
+The normal strain measures the relative deformation of a member.
+
+$$
+\varepsilon = \frac{\Delta L}{L}
+$$
+
+where
+
+- \(L\) is the original length
+- \(\Delta L\) is the change in length
+
+Strain is dimensionless.
+
+## Hooke's Law
+
+For linear elastic materials, stress and strain are proportional.
+
+$$
+\sigma = E \varepsilon
+$$
+
+where
+
+- \(E\) is Young's modulus.
+
+## Example
+
+A steel bar with cross-sectional area
+
+$$
+A = 500 mm^2
+$$
+
+is subjected to a tensile force
+
+$$
+N = 40 kN
+$$
+
+The normal stress is
+
+$$
+\sigma = \frac{N}{A}
+$$
+
+$$
+\sigma = \frac{40\,000}{500} = 80 MPa
+$$
+
+## Warning
+
+The formula
+
+$$
+\sigma = \frac{N}{A}
+$$
+
+is valid only when:
+
+- the load is uniformly distributed
+- the member is prismatic
+- the stress distribution is uniform
+
+Near load application points, **stress concentrations** may occur.
+
+## Summary
+
+For axially loaded members:
+
+$$
+\sigma = \frac{N}{A}
+$$
+
+$$
+\varepsilon = \frac{\Delta L}{L}
+$$
+
+$$
+\sigma = E \varepsilon
+$$
+
+These relations form the basis for the analysis of axial deformation.
+
+## Exercises
+
+1. A rod with diameter \(10 mm\) is subjected to a tensile force of \(15 kN\). Compute the normal stress.
+
+2. A bar with length \(2 m\) elongates by \(1.5 mm\). Determine the normal strain.

@@ -1,0 +1,52 @@
+---
+title: "Notation"
+---
+
+# Notation
+
+The following notation is used consistently throughout the course.
+
+## Forces and Moments
+
+- \(N\): axial force
+- \(V\): shear force
+- \(M\): bending moment
+- \(T\): torque
+
+## Stresses and Strains
+
+- \(\sigma\): normal stress
+- \(\tau\): shear stress
+- \(\varepsilon\): normal strain
+- \(\gamma\): shear strain
+
+## Material Properties
+
+- \(E\): Young's modulus
+- \(G\): shear modulus
+
+## Cross-Section Properties
+
+- \(A\): cross-sectional area
+- \(I\): second moment of area
+- \(J\): polar moment of inertia
+- \(Q\): first moment of area
+
+## Displacements
+
+- \(u\): axial displacement
+- \(w\): transverse displacement
+- \(\theta\): rotation
+
+## Buckling
+
+- \(P_{cr}\): critical buckling load
+- \(L\): column length
+- \(K\): effective length factor
+
+## Coordinate System
+
+For beams:
+
+- \(x\): beam axis
+- \(y, z\): cross-section coordinates

@@ -1,0 +1,38 @@
+---
+title: "Engineering Mechanics II"
+---
+
+# Course Notes
+
+These notes accompany the course **Engineering Mechanics II**.
+
+The material covers the fundamental behavior of deformable solids under mechanical loading, focusing on:
+
+- axially loaded members
+- torsion of solid and thin-walled shafts
+- beam bending and stresses
+- stability and buckling of columns
+
+The notes follow the classical mechanics-of-materials approach and are inspired by the textbook by James M. Gere.
+
+## Topics
+
+1. Axially Loaded Members
+2. Torsion
+3. Beam Bending
+4. Buckling
+
+## How to Use These Notes
+
+Each section contains:
+
+- definitions
+- key formulas
+- derivations
+- worked examples
+- warnings about common mistakes
+- exercises
+
+## Recommended Textbook
+
+James M. Gere and Barry J. Goodno, *Mechanics of Materials*.

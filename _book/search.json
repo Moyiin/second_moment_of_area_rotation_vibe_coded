@@ -1,0 +1,432 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Engineering Mechanics II",
+    "section": "",
+    "text": "1 Course Notes\nThese notes accompany the course Engineering Mechanics II.\nThe material covers the fundamental behavior of deformable solids under mechanical loading, focusing on:\nThe notes follow the classical mechanics-of-materials approach and are inspired by the textbook by James M. Gere.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Engineering Mechanics II</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#topics",
+    "href": "index.html#topics",
+    "title": "Engineering Mechanics II",
+    "section": "1.1 Topics",
+    "text": "1.1 Topics\n\nAxially Loaded Members\nTorsion\nBeam Bending\nBuckling",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Engineering Mechanics II</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-these-notes",
+    "href": "index.html#how-to-use-these-notes",
+    "title": "Engineering Mechanics II",
+    "section": "1.2 How to Use These Notes",
+    "text": "1.2 How to Use These Notes\nEach section contains:\n\ndefinitions\nkey formulas\nderivations\nworked examples\nwarnings about common mistakes\nexercises",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Engineering Mechanics II</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#recommended-textbook",
+    "href": "index.html#recommended-textbook",
+    "title": "Engineering Mechanics II",
+    "section": "1.3 Recommended Textbook",
+    "text": "1.3 Recommended Textbook\nJames M. Gere and Barry J. Goodno, Mechanics of Materials.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Engineering Mechanics II</span>"
+    ]
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "2  Course Syllabus",
+    "section": "",
+    "text": "3 Engineering Mechanics II",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-overview",
+    "href": "syllabus.html#course-overview",
+    "title": "2  Course Syllabus",
+    "section": "3.1 Course Overview",
+    "text": "3.1 Course Overview\nThis course introduces the mechanical behavior of structural elements subjected to common engineering loads. The focus lies on stress analysis, deformation, and stability of structural members.\nThe material forms the foundation for later courses in structural engineering, mechanical design, and aerospace structures.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#learning-objectives",
+    "href": "syllabus.html#learning-objectives",
+    "title": "2  Course Syllabus",
+    "section": "3.2 Learning Objectives",
+    "text": "3.2 Learning Objectives\nAfter completing the course, students should be able to:\n\ncompute stresses and strains in structural members\nanalyze torsion in circular and thin-walled shafts\ndetermine stresses in beams subjected to bending\ncompute beam deflections\nevaluate the stability of columns and predict buckling loads",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-topics",
+    "href": "syllabus.html#course-topics",
+    "title": "2  Course Syllabus",
+    "section": "3.3 Course Topics",
+    "text": "3.3 Course Topics\n\n3.3.1 1 Axially Loaded Members\n\nnormal stress and strain\nHooke’s law\ndeformation of bars\nstatically indeterminate problems\nthermal stresses\nstress concentrations\n\n\n\n3.3.2 2 Torsion\n\ntorsion of circular shafts\nshear stress distribution\nangle of twist\nstatically indeterminate torsion\nthin-walled sections\n\n\n\n3.3.3 3 Beam Bending\n\ninternal forces in beams\nnormal stresses due to bending\nshear stresses in beams\nsection properties\nbeam deflection\nstatically indeterminate beams\nthin-walled beams\n\n\n\n3.3.4 4 Buckling\n\nstability of columns\nEuler buckling theory\neffective length\ncritical load",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#assessment",
+    "href": "syllabus.html#assessment",
+    "title": "2  Course Syllabus",
+    "section": "3.4 Assessment",
+    "text": "3.4 Assessment\nAssessment may include:\n\nhomework assignments\nwritten examinations\noptional project work",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html",
+    "href": "notation.html",
+    "title": "3  Notation",
+    "section": "",
+    "text": "4 Notation\nThe following notation is used consistently throughout the course.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#forces-and-moments",
+    "href": "notation.html#forces-and-moments",
+    "title": "3  Notation",
+    "section": "4.1 Forces and Moments",
+    "text": "4.1 Forces and Moments\n\n(N): axial force\n(V): shear force\n(M): bending moment\n(T): torque",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#stresses-and-strains",
+    "href": "notation.html#stresses-and-strains",
+    "title": "3  Notation",
+    "section": "4.2 Stresses and Strains",
+    "text": "4.2 Stresses and Strains\n\n(): normal stress\n(): shear stress\n(): normal strain\n(): shear strain",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#material-properties",
+    "href": "notation.html#material-properties",
+    "title": "3  Notation",
+    "section": "4.3 Material Properties",
+    "text": "4.3 Material Properties\n\n(E): Young’s modulus\n(G): shear modulus",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#cross-section-properties",
+    "href": "notation.html#cross-section-properties",
+    "title": "3  Notation",
+    "section": "4.4 Cross-Section Properties",
+    "text": "4.4 Cross-Section Properties\n\n(A): cross-sectional area\n(I): second moment of area\n(J): polar moment of inertia\n(Q): first moment of area",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#displacements",
+    "href": "notation.html#displacements",
+    "title": "3  Notation",
+    "section": "4.5 Displacements",
+    "text": "4.5 Displacements\n\n(u): axial displacement\n(w): transverse displacement\n(): rotation",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#buckling",
+    "href": "notation.html#buckling",
+    "title": "3  Notation",
+    "section": "4.6 Buckling",
+    "text": "4.6 Buckling\n\n(P_{cr}): critical buckling load\n(L): column length\n(K): effective length factor",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html#coordinate-system",
+    "href": "notation.html#coordinate-system",
+    "title": "3  Notation",
+    "section": "4.7 Coordinate System",
+    "text": "4.7 Coordinate System\nFor beams:\n\n(x): beam axis\n(y, z): cross-section coordinates",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html",
+    "href": "topics/axial-members/01-normal-stress-strain.html",
+    "title": "4  Normal Stress and Strain",
+    "section": "",
+    "text": "5 Normal Stress and Strain",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#learning-goals",
+    "href": "topics/axial-members/01-normal-stress-strain.html#learning-goals",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.1 Learning Goals",
+    "text": "5.1 Learning Goals\nAfter this section you should be able to:\n\ndefine normal stress and normal strain\ncompute stress in an axially loaded member\nunderstand the relationship between stress and strain\napply Hooke’s law",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#axially-loaded-member",
+    "href": "topics/axial-members/01-normal-stress-strain.html#axially-loaded-member",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.2 Axially Loaded Member",
+    "text": "5.2 Axially Loaded Member\nAn axially loaded member is a structural element subjected to forces acting along its longitudinal axis.\nExamples include:\n\ntie rods\ncolumns\ntruss members\nbolts\n\nThe internal force in such a member is the axial force (N).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#definition-normal-stress",
+    "href": "topics/axial-members/01-normal-stress-strain.html#definition-normal-stress",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.3 Definition: Normal Stress",
+    "text": "5.3 Definition: Normal Stress\nThe normal stress in a member is defined as the axial force divided by the cross-sectional area.\n\\[\n\\sigma = \\frac{N}{A}\n\\]\nwhere\n\n(N) is the axial force\n(A) is the cross-sectional area\n\nA positive value corresponds to tension, while a negative value corresponds to compression.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#normal-strain",
+    "href": "topics/axial-members/01-normal-stress-strain.html#normal-strain",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.4 Normal Strain",
+    "text": "5.4 Normal Strain\nThe normal strain measures the relative deformation of a member.\n\\[\n\\varepsilon = \\frac{\\Delta L}{L}\n\\]\nwhere\n\n(L) is the original length\n(L) is the change in length\n\nStrain is dimensionless.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#hookes-law",
+    "href": "topics/axial-members/01-normal-stress-strain.html#hookes-law",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.5 Hooke’s Law",
+    "text": "5.5 Hooke’s Law\nFor linear elastic materials, stress and strain are proportional.\n\\[\n\\sigma = E \\varepsilon\n\\]\nwhere\n\n(E) is Young’s modulus.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#example",
+    "href": "topics/axial-members/01-normal-stress-strain.html#example",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.6 Example",
+    "text": "5.6 Example\nA steel bar with cross-sectional area\n\\[\nA = 500 mm^2\n\\]\nis subjected to a tensile force\n\\[\nN = 40 kN\n\\]\nThe normal stress is\n\\[\n\\sigma = \\frac{N}{A}\n\\]\n\\[\n\\sigma = \\frac{40\\,000}{500} = 80 MPa\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#warning",
+    "href": "topics/axial-members/01-normal-stress-strain.html#warning",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.7 Warning",
+    "text": "5.7 Warning\nThe formula\n\\[\n\\sigma = \\frac{N}{A}\n\\]\nis valid only when:\n\nthe load is uniformly distributed\nthe member is prismatic\nthe stress distribution is uniform\n\nNear load application points, stress concentrations may occur.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#summary",
+    "href": "topics/axial-members/01-normal-stress-strain.html#summary",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.8 Summary",
+    "text": "5.8 Summary\nFor axially loaded members:\n\\[\n\\sigma = \\frac{N}{A}\n\\]\n\\[\n\\varepsilon = \\frac{\\Delta L}{L}\n\\]\n\\[\n\\sigma = E \\varepsilon\n\\]\nThese relations form the basis for the analysis of axial deformation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/01-normal-stress-strain.html#exercises",
+    "href": "topics/axial-members/01-normal-stress-strain.html#exercises",
+    "title": "4  Normal Stress and Strain",
+    "section": "5.9 Exercises",
+    "text": "5.9 Exercises\n\nA rod with diameter (10 mm) is subjected to a tensile force of (15 kN). Compute the normal stress.\nA bar with length (2 m) elongates by (1.5 mm). Determine the normal strain.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normal Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html",
+    "href": "topics/axial-members/02-axial-deformation.html",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "",
+    "text": "6 Deformation of Axially Loaded Members",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#learning-goals",
+    "href": "topics/axial-members/02-axial-deformation.html#learning-goals",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.1 Learning Goals",
+    "text": "6.1 Learning Goals\nAfter this section you should be able to:\n\ncompute elongation of an axially loaded bar\nderive the deformation formula\nanalyze members composed of multiple segments",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#deformation-of-a-uniform-bar",
+    "href": "topics/axial-members/02-axial-deformation.html#deformation-of-a-uniform-bar",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.2 Deformation of a Uniform Bar",
+    "text": "6.2 Deformation of a Uniform Bar\nConsider a bar of length (L) subjected to an axial force (N).\nFrom Hooke’s law\n\\[\n\\sigma = E \\varepsilon\n\\]\nand\n\\[\n\\sigma = \\frac{N}{A}\n\\]\nwe obtain\n\\[\n\\varepsilon = \\frac{N}{AE}\n\\]\nSince\n\\[\n\\varepsilon = \\frac{\\Delta L}{L}\n\\]\nthe axial deformation becomes\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#main-result",
+    "href": "topics/axial-members/02-axial-deformation.html#main-result",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.3 Main Result",
+    "text": "6.3 Main Result\nThe elongation of a prismatic bar under axial load is\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#example",
+    "href": "topics/axial-members/02-axial-deformation.html#example",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.4 Example",
+    "text": "6.4 Example\nA steel rod has\n\nlength (L = 2 m)\ncross-sectional area (A = 300 mm^2)\nYoung’s modulus (E = 210 GPa)\n\nThe applied tensile force is\n\\[\nN = 30 kN\n\\]\nThe elongation becomes\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]\nSubstituting the values in consistent units gives the change in length.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#members-with-several-segments",
+    "href": "topics/axial-members/02-axial-deformation.html#members-with-several-segments",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.5 Members with Several Segments",
+    "text": "6.5 Members with Several Segments\nIf a member consists of multiple segments, the total deformation is the sum of the individual deformations.\n\\[\n\\Delta L = \\sum_i \\frac{N_i L_i}{A_i E_i}\n\\]\nThis principle follows from compatibility of deformations.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#warning",
+    "href": "topics/axial-members/02-axial-deformation.html#warning",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.6 Warning",
+    "text": "6.6 Warning\nThe formula\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]\nis valid only when:\n\nthe material is linear elastic\nthe cross section is constant\nthe axial force is constant along the member",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#summary",
+    "href": "topics/axial-members/02-axial-deformation.html#summary",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.7 Summary",
+    "text": "6.7 Summary\nAxial deformation of a bar is determined by\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]\nFor multiple segments,\n\\[\n\\Delta L = \\sum_i \\frac{N_i L_i}{A_i E_i}\n\\]\nThese relations allow computation of elongation in axially loaded structural members.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/02-axial-deformation.html#exercises",
+    "href": "topics/axial-members/02-axial-deformation.html#exercises",
+    "title": "5  Deformation of Axially Loaded Members",
+    "section": "6.8 Exercises",
+    "text": "6.8 Exercises\n\nA steel bar of length (1.5 m) carries a tensile force of (25 kN).\nThe cross-sectional area is (400 mm^2).\nDetermine the elongation.\nA stepped bar consists of two segments with different cross-sections.\nCompute the total deformation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Deformation of Axially Loaded Members</span>"
+    ]
+  },
+  {
+    "objectID": "topics/axial-members/interactive-axial-deformation.html",
+    "href": "topics/axial-members/interactive-axial-deformation.html",
+    "title": "6  Interactive Example: Axial Deformation",
+    "section": "",
+    "text": "7 Interactive Example: Axial Deformation\nMove the sliders and observe how the stress and elongation change.\nWe use\n\\[\n\\sigma = \\frac{N}{A}\n\\]\nand\n\\[\n\\Delta L = \\frac{N L}{A E}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive Example: Axial Deformation</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html",
+    "href": "topics/beam-bending/05-deflection.html",
+    "title": "7  Beam Deflection",
+    "section": "",
+    "text": "7.1 Learning Goals\nAfter this section you should be able to:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html#learning-goals",
+    "href": "topics/beam-bending/05-deflection.html#learning-goals",
+    "title": "7  Beam Deflection",
+    "section": "",
+    "text": "understand the relation between bending moment and beam curvature\ncompute the deflection of a simple beam\ninterpret the deformation shape of a beam under load",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html#governing-equation",
+    "href": "topics/beam-bending/05-deflection.html#governing-equation",
+    "title": "7  Beam Deflection",
+    "section": "7.2 Governing Equation",
+    "text": "7.2 Governing Equation\nFor small deflections, the elastic curve of a beam is governed by\n\\[\nE I \\, w''(x) = M(x)\n\\]\nwhere:\n\n(E) is Young’s modulus\n(I) is the second moment of area\n(w(x)) is the transverse deflection\n(M(x)) is the bending moment",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html#example-cantilever-beam-with-end-load",
+    "href": "topics/beam-bending/05-deflection.html#example-cantilever-beam-with-end-load",
+    "title": "7  Beam Deflection",
+    "section": "7.3 Example: Cantilever Beam with End Load",
+    "text": "7.3 Example: Cantilever Beam with End Load\nConsider a cantilever beam of length (L) with a vertical point load (P) at the free end.\nThe deflection curve is\n\\[\nw(x) = \\frac{P x^2}{6 E I} \\left( 3L - x \\right)\n\\]\nThe maximum deflection occurs at the free end, where (x = L):\n\\[\nw_{\\max} = \\frac{P L^3}{3 E I}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html#interpretation",
+    "href": "topics/beam-bending/05-deflection.html#interpretation",
+    "title": "7  Beam Deflection",
+    "section": "7.4 Interpretation",
+    "text": "7.4 Interpretation\nFrom the formula\n\\[\nw_{\\max} = \\frac{P L^3}{3 E I}\n\\]\nwe see:\n\nincreasing the load (P) increases the deflection\nincreasing the beam length (L) strongly increases the deflection\nincreasing (E) reduces the deflection\nincreasing (I) reduces the deflection",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  },
+  {
+    "objectID": "topics/beam-bending/05-deflection.html#numerical-example",
+    "href": "topics/beam-bending/05-deflection.html#numerical-example",
+    "title": "7  Beam Deflection",
+    "section": "7.5 Numerical Example",
+    "text": "7.5 Numerical Example\nWe consider:\n\nbeam length (L = 2.0) m\nend load (P = 2.0) kN\nYoung’s modulus (E = 210) GPa\nsecond moment of area (I = 8.0 ^{-6}) m(^4)\n\nThe following plot shows the deformation shape of the beam.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaximum deflection at the free end: 3.175 mm",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Beam Deflection</span>"
+    ]
+  }
+]
