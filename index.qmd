@@ -1,38 +1,156 @@
 ---
-title: "Engineering Mechanics II"
+title: "Second Moment of Area Transformation"
+execute:
+  echo: false
 ---
 
-# Course Notes
+Rotate the T-profile with the slider and observe how the second moments of area change.
 
-These notes accompany the course **Engineering Mechanics II**.
+```{ojs}
+viewof angle = Inputs.range([0, 360], {
+  value: 0,
+  step: 1,
+  label: "Rotation angle θ [°]"
+})
+```
 
-The material covers the fundamental behavior of deformable solids under mechanical loading, focusing on:
+```{ojs}
+{
+  // T-profile: flange 100×15 mm on top, web 15×85 mm below
+  // Centroid 69.53 mm from base, 30.47 mm from top
+  const Iyy0 = 2518754;   // mm⁴ — about y-axis (horizontal)
+  const Izz0 = 1273906;   // mm⁴ — about z-axis (vertical)
 
-- axially loaded members
-- torsion of solid and thin-walled shafts
-- beam bending and stresses
-- stability and buckling of columns
+  const theta = angle * Math.PI / 180;
+  const cosT  = Math.cos(theta);
+  const sinT  = Math.sin(theta);
 
-The notes follow the classical mechanics-of-materials approach and are inspired by the textbook by James M. Gere.
+  // Transformation formulas (I_yz₀ = 0 by symmetry)
+  const Ieta   = (Iyy0 + Izz0) / 2 + (Iyy0 - Izz0) / 2 * Math.cos(2 * theta);
+  const Ixi    = (Iyy0 + Izz0) / 2 - (Iyy0 - Izz0) / 2 * Math.cos(2 * theta);
+  const Ietaxi = (Iyy0 - Izz0) / 2 * Math.sin(2 * theta);
 
-## Topics
+  // ── Left: rotating T-profile ─────────────────────────────────────────────
+  //
+  // Lecture convention: y points LEFT, z points DOWN
+  // SVG mapping:  x_svg = cx - y·sc
+  //               y_svg = cy + z·sc
 
-1. Axially Loaded Members
-2. Torsion
-3. Beam Bending
-4. Buckling
+  const W = 300, H = 300, cx = 150, cy = 150, sc = 1.4;
+  const axF   = 60;  // fixed axis length (px)
+  const axLen = 80;  // rotating axis length (px)
 
-## How to Use These Notes
+  // Polygon in lecture coords [y_left, z_down] (mm), centroid at origin
+  const poly = [
+    [-7.5, +69.53], [+7.5, +69.53], [+7.5, -15.47],
+    [+50.0, -15.47], [+50.0, -30.47], [-50.0, -30.47], [-50.0, -15.47], [-7.5, -15.47]
+  ];
+  const pts = poly.map(([y, z]) => `${cx - y * sc},${cy + z * sc}`).join(" ");
 
-Each section contains:
+  // SVG rotate(-angle) on a leftward vector gives downward at θ=90°,
+  // matching the rotation from y toward z in the lecture convention.
+  //
+  // Derived tip positions (for stationary labels outside the rotating group):
+  //   η tip: rotate(-θ) on (-axLen, 0)  →  (cx - cosT·axLen,  cy + sinT·axLen)
+  //   ζ tip: rotate(-θ) on (0, +axLen)  →  (cx + sinT·axLen,  cy + cosT·axLen)
+  const labelD  = axLen + 15;
+  const etaLblX = cx - cosT * labelD;
+  const etaLblY = cy + sinT * labelD;
+  const xiLblX  = cx + sinT * labelD;
+  const xiLblY  = cy + cosT * labelD;
 
-- definitions
-- key formulas
-- derivations
-- worked examples
-- warnings about common mistakes
-- exercises
+  const profileSVG = svg`<svg width="${W}" height="${H}" style="border:1px solid #ddd;border-radius:6px;background:#fafafa;">
+    <!-- Fixed y-axis: points LEFT, red (matches I_yy) -->
+    <line x1="${cx}" y1="${cy}" x2="${cx - axF}" y2="${cy}"
+          stroke="#C00000" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <polygon points="${cx - axF},${cy} ${cx - axF + 9},${cy - 4} ${cx - axF + 9},${cy + 4}"
+             fill="#C00000"/>
+    <text x="${cx - axF - 11}" y="${cy + 5}" fill="#C00000" font-size="13" font-style="italic"
+          text-anchor="middle">y</text>
+    <!-- Fixed z-axis: points DOWN, blue (matches I_zz) -->
+    <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy + axF}"
+          stroke="#4472C4" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <polygon points="${cx},${cy + axF} ${cx - 4},${cy + axF - 9} ${cx + 4},${cy + axF - 9}"
+             fill="#4472C4"/>
+    <text x="${cx + 12}" y="${cy + axF + 5}" fill="#4472C4" font-size="13" font-style="italic"
+          text-anchor="middle">z</text>
+    <!-- Rotating group: profile + η and ζ axes -->
+    <g transform="rotate(${-angle},${cx},${cy})">
+      <polygon points="${pts}" fill="#4472C4" fill-opacity="0.3" stroke="#2E5CAD" stroke-width="2"/>
+      <!-- η axis (points left at θ=0) -->
+      <line x1="${cx}" y1="${cy}" x2="${cx - axLen}" y2="${cy}"
+            stroke="#888" stroke-width="2"/>
+      <polygon points="${cx - axLen},${cy} ${cx - axLen + 10},${cy - 5} ${cx - axLen + 10},${cy + 5}"
+               fill="#888"/>
+      <!-- ζ axis (points down at θ=0) -->
+      <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy + axLen}"
+            stroke="#888" stroke-width="2"/>
+      <polygon points="${cx},${cy + axLen} ${cx - 5},${cy + axLen - 10} ${cx + 5},${cy + axLen - 10}"
+               fill="#888"/>
+    </g>
+    <!-- η and ζ labels: stationary, computed from angle -->
+    <text x="${etaLblX}" y="${etaLblY + 5}" fill="#888" font-size="14" font-style="italic"
+          text-anchor="middle">η</text>
+    <text x="${xiLblX}"  y="${xiLblY  + 5}" fill="#888" font-size="14" font-style="italic"
+          text-anchor="middle">ζ</text>
+    <!-- Centroid -->
+    <circle cx="${cx}" cy="${cy}" r="4" fill="#444" stroke="white" stroke-width="1.5"/>
+  </svg>`;
 
-## Recommended Textbook
+  // ── Right: I vs θ curves ──────────────────────────────────────────────────
 
-James M. Gere and Barry J. Goodno, *Mechanics of Materials*.
+  const curves = [];
+  for (let a = 0; a <= 360; a++) {
+    const t = a * Math.PI / 180;
+    curves.push({a, v: ((Iyy0 + Izz0) / 2 + (Iyy0 - Izz0) / 2 * Math.cos(2 * t)) / 1e6, s: "Iyy"});
+    curves.push({a, v: ((Iyy0 + Izz0) / 2 - (Iyy0 - Izz0) / 2 * Math.cos(2 * t)) / 1e6, s: "Izz"});
+    curves.push({a, v:  (Iyy0 - Izz0) / 2 * Math.sin(2 * t) / 1e6,                        s: "Iyz"});
+  }
+
+  const momentPlot = Plot.plot({
+    width: 430,
+    height: 290,
+    style: {fontSize: "13px"},
+    x: {label: "θ [°]", domain: [0, 360], ticks: [0, 90, 180, 270, 360]},
+    y: {label: "I [10⁶ mm⁴]"},
+    color: {
+      domain: ["Iyy", "Izz", "Iyz"],
+      range: ["#C00000", "#4472C4", "#1F7A1F"],
+      legend: true
+    },
+    marks: [
+      Plot.ruleY([0], {stroke: "#ccc"}),
+      Plot.line(curves, {x: "a", y: "v", stroke: "s", strokeWidth: 2.5}),
+      Plot.ruleX([angle], {stroke: "#666", strokeDasharray: "5,3"}),
+      Plot.dot(
+        [{a: angle, v: Ieta   / 1e6, s: "Iyy"},
+         {a: angle, v: Ixi    / 1e6, s: "Izz"},
+         {a: angle, v: Ietaxi / 1e6, s: "Iyz"}],
+        {x: "a", y: "v", fill: "s", r: 5, stroke: "white", strokeWidth: 1.5}
+      )
+    ]
+  });
+
+  // ── Current numerical values ──────────────────────────────────────────────
+
+  const vals = html`<div style="font-size:13px;margin-top:10px;line-height:2.2;color:#333;">
+    <span style="color:#C00000;">■</span>&thinsp;I<sub>yy</sub> = ${(Ieta   / 1e6).toFixed(3)} &times; 10<sup>6</sup> mm<sup>4</sup><br>
+    <span style="color:#4472C4;">■</span>&thinsp;I<sub>zz</sub> = ${(Ixi    / 1e6).toFixed(3)} &times; 10<sup>6</sup> mm<sup>4</sup><br>
+    <span style="color:#1F7A1F;">■</span>&thinsp;I<sub>yz</sub> = ${(Ietaxi / 1e6).toFixed(3)} &times; 10<sup>6</sup> mm<sup>4</sup>
+  </div>`;
+
+  // ── Layout ────────────────────────────────────────────────────────────────
+
+  return html`<div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;margin-top:12px;">
+    <div>
+      <div style="text-align:center;font-size:13px;font-weight:600;color:#555;margin-bottom:6px;">Cross-section</div>
+      ${profileSVG}
+    </div>
+    <div style="flex:1;min-width:300px;">
+      <div style="font-size:13px;font-weight:600;color:#555;margin-bottom:6px;">Second moments of area</div>
+      ${momentPlot}
+      ${vals}
+    </div>
+  </div>`;
+}
+```

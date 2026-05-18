@@ -19,5 +19,8 @@
   },
   "topics/beam-bending/05-deflection.qmd": {
     "05-deflection.html": "efff3b58"
+  },
+  "topics/03-beam-bending/second-moment-of-area-transformation.qmd": {
+    "second-moment-of-area-transformation.html": "22214263"
   }
 }
